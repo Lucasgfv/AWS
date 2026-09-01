@@ -21,3 +21,22 @@ Amazon Elastic Compute Cloud EC2 Overview
 
 Amazon Elastic Compute Cloud EC2 Overview - Storage & Networking
 <img width="1511" height="855" alt="image" src="https://github.com/user-attachments/assets/e3d2a043-0120-45cd-9f36-b526726c55b4" />
+
+Amazon Elastic Block Store:
+<img width="1488" height="848" alt="image" src="https://github.com/user-attachments/assets/04469eda-a2eb-4545-86c0-b3d7126b468e" />
+
+ Amazon Elastic Block Store (Amazon EBS) Features
+ <img width="1502" height="867" alt="image" src="https://github.com/user-attachments/assets/f2e6eaa0-6e46-4653-b170-2c4f196e703d" />
+
+Amazon EBS Volume Comparision:
+<img width="1512" height="812" alt="image" src="https://github.com/user-attachments/assets/d235cdc3-a97e-4c9f-8de6-f245e00f783b" />
+
+AWS Well-Architected Overview
+<img width="1499" height="851" alt="image" src="https://github.com/user-attachments/assets/2f822f25-7511-4a5e-94c7-9b3060efe123" />
+
+DNS:
+<img width="1345" height="851" alt="image" src="https://github.com/user-attachments/assets/bf150392-69ec-4776-860a-94083477659a" />
+
+
+AWS Trusted Advisor:
+<img width="957" height="550" alt="image" src="https://github.com/user-attachments/assets/d18e8d49-9496-4951-b464-66ccbfe2bec7" />
