@@ -208,3 +208,65 @@
   ![Lab 3 - Registro 20](https://github.com/user-attachments/assets/703c10d2-34f6-4b66-a644-bfe95e568231)  
   ![Lab 3 - Registro 21](https://github.com/user-attachments/assets/7c4f8a03-4bba-4d3e-844b-e4abd13d0fe8)
 </details>
+
+### Resumo Prático: Configuração de Security Groups entre Camadas (Web → BD)
+<img width="1764" height="992" alt="screenshot_20260926153229" src="https://github.com/user-attachments/assets/b706873d-f7f0-4e69-8e2b-51e13a868659" />
+
+#### 1. Conceito Principal
+
+* **Comunicação Segura:** Para ligar servidores em sub-redes distintas (ex.: Web Server e Database Server), a melhor prática na AWS é referenciar o **Security Group de origem** em vez de usar endereços IP estáticos ou redes abertas (`0.0.0.0/0`).
+
+
+* **Stateful (Com monitorização de estado):** Os Security Groups da AWS guardam o estado da sessão. Ao permitir a entrada no banco de dados, o tráfego de resposta é autorizado automaticamente, desde que a saída do servidor web mantenha as configurações padrão.
+
+---
+
+#### 2. Passo a Passo de Configuração
+
+1. **Identificação dos Grupos:**
+* Obter o ID do grupo de origem: `WebServerSecurityGroup` (ex.: `sg-03bf...`).
+
+
+* Localizar o grupo de destino: `DbServerSecurityGroup` (ex.: `sg-01aa...`).
+
+
+
+
+2. **Edição das Regras de Entrada (*Inbound Rules*):**
+* Aceder a **VPC** > **Grupos de segurança** e selecionar o grupo de base de dados (`DbServerSecurityGroup`).
+
+
+* Clicar no separador **Regras de entrada** e depois em **Editar regras de entrada**.
+
+
+
+
+3. **Criação da Regra:**
+* **Tipo:** `MYSQL/Aurora` (protocolo TCP, porta `3306`).
+
+
+* **Origem (*Source*):** Selecionar `Personalizado` (*Custom*), digitar as letras iniciais do ID (ex.: `sg-03bf`) e clicar obrigatoriamente na sugestão apresentada pelo menu suspenso.
+
+
+* Salvar as alterações em **Salvar regras**.
+
+
+
+
+
+---
+
+#### 3. Erros Comuns e Como Resolver
+
+* **Erro de conversão de regra (CIDR vs SG):** A AWS não permite editar uma regra já gravada com IP/CIDR (ex.: `0.0.0.0/0`) para transformá-la diretamente numa referência a outro grupo de segurança (`sg-...`).
+
+
+* *Solução:* Excluir a linha antiga com erro e clicar em **Adicionar regra** para configurar a linha do zero.
+
+
+
+
+* **Seleção do Security Group:** Apenas colar o texto do ID não conclui o vínculo. É indispensável clicar na etiqueta sugerida pela consola para que a AWS vincule o ID corretamente.
+
+
+* **Validações de Laboratório:** Ao submeter relatórios ou testes de avaliação, garantir a inserção exata do nome do grupo de destino solicitado (`DbServerSecurityGroup`), evitando preencher com a descrição de outro recurso.
