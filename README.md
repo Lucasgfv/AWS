@@ -270,3 +270,57 @@
 
 
 * **Validações de Laboratório:** Ao submeter relatórios ou testes de avaliação, garantir a inserção exata do nome do grupo de destino solicitado (`DbServerSecurityGroup`), evitando preencher com a descrição de outro recurso.
+
+
+ATV 4 CAlcauladora de stimageiva de uso AWS:
+
+
+<img width="1762" height="991" alt="screenshot_20261003144223" src="https://github.com/user-attachments/assets/89d9dba9-f9d6-41b1-944f-a3d265791871" />
+
+ATV5:
+BANCO DE DADOS NA PRATICA
+
+A seguradora deseja ajudar seus administradores de
+anco de dados a gastar menos tempo em tarefas
+operacionais, como aplicacao de patches e
+gerenciamento de infraestrutura de banco de dados.
+Eles tambem desejam uma solucao que melhore a
+disponibilidade e eficiência do banco de dados.
+
+OBJETIVOS DE APRENDIZADO
+
+Crie uma instancia de banco de dados Amazon
+RDS.
+
+/ Habilite backups em seu banco de dados.
+
+/ Habilite varias AZs para sua implantação do
+Amazon RDS.
+
+/ Crie uma réplica de leitura do Amazon RDS.
+
+<img width="1035" height="538" alt="image" src="https://github.com/user-attachments/assets/e08f9c0e-d74f-441d-9b32-aabb4362dfed" />
+
+A alta disponibilidade é alcançada através
+da implantação Multi-AZ, onde o Amazon
+RDS replica sincronamente dados da
+instância primária para uma instância
+standby em uma AZ diferente.
+
+<img width="1103" height="592" alt="image" src="https://github.com/user-attachments/assets/7ebb1bb9-0e53-46fa-a245-f0fcbb123337" />
+
+Durante falhas da instância primária, o
+Amazon RDS automaticamente realiza
+failover para a instância standby e
+redireciona solicitações sem intervenção
+manual.
+
+
+
+<img width="1046" height="557" alt="image" src="https://github.com/user-attachments/assets/04adc9ae-4641-4756-989c-d746c617ffa7" />
+
+O registro do nome DNS da instancia do
+banco de dados permanece inalterado
+durante o failover, fornecendo
+recuperação automática da aplicação sem
+ação administrativa.
