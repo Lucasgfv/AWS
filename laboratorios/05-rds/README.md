@@ -1,24 +1,15 @@
 # Laboratório 5 — Amazon RDS: Multi-AZ, backups e réplica de leitura
-Bbanco de dados NA PRATICA
 
-A seguradora deseja ajudar seus administradores de
-banco de dados a gastar menos tempo em tarefas
-operacionais, como aplicacao de patches e
-gerenciamento de infraestrutura de bbanco de dados.
-Eles tambem desejam uma solucao que melhore a
-disponibilidade e eficiência do bbanco de dados.
+## Banco de dados na prática
 
-OBJETIVOS DE APRENDIZADO
+A seguradora deseja ajudar seus administradores de banco de dados a gastar menos tempo em tarefas operacionais, como aplicação de patches e gerenciamento da infraestrutura. Ela também busca uma solução que melhore a disponibilidade e a eficiência do banco de dados.
 
-Crie uma instancia de bbanco de dados Amazon
-RDS.
+## Objetivos de aprendizado
 
-- Habilite backups em seu bbanco de dados.
-
-- Habilite varias AZs para sua implantação do
-Amazon RDS.
-
-/ Crie uma réplica de leitura do Amazon RDS.
+- Criar uma instância de banco de dados Amazon RDS.
+- Habilitar backups no banco de dados.
+- Habilitar múltiplas Zonas de Disponibilidade com uma implantação Multi-AZ.
+- Criar uma réplica de leitura do Amazon RDS.
 
 <img width="1035" height="538" alt="image" src="https://github.com/user-attachments/assets/e08f9c0e-d74f-441d-9b32-aabb4362dfed" />
 
@@ -40,13 +31,13 @@ manual.
 
 <img width="1046" height="557" alt="image" src="https://github.com/user-attachments/assets/04adc9ae-4641-4756-989c-d746c617ffa7" />
 
-O registro do nome DNS da instancia do
-bbanco de dados permanece inalterado
+O registro do nome DNS da instância do
+banco de dados permanece inalterado
 durante o failover, fornecendo
 recuperação automática da aplicação sem
 ação administrativa.
 
-Pratica:
+## Prática
 <img width="1517" height="719" alt="image" src="https://github.com/user-attachments/assets/3629aaa4-44e1-49bd-9793-a4380fb980a7" />
 <img width="1521" height="744" alt="image" src="https://github.com/user-attachments/assets/1b115d54-cd48-48b0-8571-29aa512662c3" />
 <img width="1544" height="761" alt="image" src="https://github.com/user-attachments/assets/5dbedca0-402a-4392-b82a-879b4ce6f55e" />
