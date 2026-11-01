@@ -1,0 +1,22 @@
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+.aws/
+credentials
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Terraform e ferramentas de infraestrutura
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
