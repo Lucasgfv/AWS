@@ -67,3 +67,11 @@ Consulte [CONTRIBUTING.md](CONTRIBUTING.md) para manter a mesma organização no
 ## Material anterior
 
 O conteúdo anterior foi preservado em [`arquivo-original/`](arquivo-original/) para manter as anotações e evidências sem perda de informação durante a reorganização.
+
+ATV 07:
+<img width="1442" height="811" alt="screenshot_20261124205951" src="https://github.com/user-attachments/assets/6d7e55d5-fbe3-4789-a3c2-ec05cf759943" />
+<img width="1184" height="570" alt="image" src="https://github.com/user-attachments/assets/84cdda39-2fe9-4bc7-a5b7-bb9acd543816" />
+
+ATV 8
+<img width="1442" height="811" alt="screenshot_20261124213537" src="https://github.com/user-attachments/assets/d87be176-21ad-4c2d-aff5-f5894e876aa9" />
+<img width="1074" height="593" alt="image" src="https://github.com/user-attachments/assets/ec9170b0-f01e-4d3b-9798-3834c8504388" />
